@@ -195,9 +195,7 @@ ul {
   display: block;
   gap: 72px;
 }
-.work-rules-item {
-  padding-bottom: 72px;
-}
+
 .icons {
   display: none;
 }
@@ -397,7 +395,6 @@ img {
   color: #404bbf;
 }
 .subscribe {
-  margin-bottom: 16px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -642,6 +639,11 @@ img {
   .is-open-mobile-menu {
     transform: translateX(0);
   }
+  .modal {
+    width: 288px;
+    min-height: 623px;
+  }
+
   .title-box {
     background-color: #2e2f42;
     padding-top: 188px;
@@ -664,6 +666,10 @@ img {
     justify-content: center;
     row-gap: 72px;
   }
+  .img-employ {
+    display: flex;
+    justify-content: center;
+  }
   .mobile-nav {
     display: block;
     margin-bottom: 168px;
@@ -684,6 +690,7 @@ img {
   .menu-mobile {
     display: block;
     gap: 40px;
+    position: absolute;
   }
   .menu {
     display: none;
@@ -694,6 +701,11 @@ img {
   .mobile-linktext:hover,
   .mobile-linktext:focus {
     color: #404bbf;
+  }
+  .head-work-rules {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   .mobile-linktext {
     font-weight: 700;
@@ -726,11 +738,58 @@ img {
   .text-adres {
     display: none;
   }
+  .head-work-rules {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.2;
+    font-family: "Roboto", sans-serif;
+    letter-spacing: 0.02em;
+    color: #2e2f42;
+  }
+  .paragraph-work-rules {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    font-family: "Roboto", sans-serif;
+    letter-spacing: 0.02em;
+    color: #434455;
+  }
+  .characteristics-organization {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 72px;
+  }
+  .list-item-ourportfolio {
+    padding-bottom: 48px;
+  }
 }
 /* tablet */
 @media (min-width: 768px) and (max-width: 1157px) {
+  .head-work-rules {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.2;
+    font-family: "Roboto", sans-serif;
+    letter-spacing: 0.02em;
+    color: #2e2f42;
+  }
+  .paragraph-work-rules {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    font-family: "Roboto", sans-serif;
+    letter-spacing: 0.02em;
+    color: #434455;
+  }
   .mobile-menu-button {
     display: none;
+  }
+  .item-ourteam {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
   }
   .title-box {
     background-color: #2e2f42;
