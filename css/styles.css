@@ -620,10 +620,23 @@ img {
   padding-left: 16px;
   padding-right: 16px;
 }
+/* ================================================= MOBILE 👇 ========================================= */
 @media (min-width: 320px) and (max-width: 767px) {
   .mobile-menu-button {
     border: none;
     background-color: transparent;
+  }
+  .text-footer {
+    display: flex;
+    justify-content: center;
+  }
+  .section-our-portfolio {
+    display: flex;
+    justify-content: center;
+  }
+  .section-our-team {
+    display: flex;
+    justify-content: center;
   }
   .mobile-menu {
     position: absolute;
@@ -643,7 +656,10 @@ img {
     width: 288px;
     min-height: 623px;
   }
-
+  .work-rules {
+    display: flex;
+    justify-content: center;
+  }
   .title-box {
     background-color: #2e2f42;
     padding-top: 188px;
@@ -652,23 +668,27 @@ img {
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url(../images/people-office.jpg);
+      url(../images/mobile/dark-bgx1mobile.jpg);
     max-width: 1440px;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     margin: 0 auto;
     position: relative;
+    display: flex;
+    justify-content: center;
   }
   .list-item-ourteam {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     row-gap: 72px;
+    align-items: center;
   }
   .img-employ {
     display: flex;
     justify-content: center;
+    align-items: center;
   }
   .mobile-nav {
     display: block;
@@ -680,23 +700,24 @@ img {
   }
   .mobile-adres {
     display: block;
-    gap: 48px;
     margin-bottom: 48px;
   }
   .navigating-mobile {
     display: block;
     margin-right: auto;
+    padding-bottom: 168px;
   }
   .menu-mobile {
     display: block;
-    gap: 40px;
     position: absolute;
   }
   .menu {
     display: none;
   }
+
   .contacts-mobile {
     display: block;
+    padding-bottom: 24px;
   }
   .mobile-linktext:hover,
   .mobile-linktext:focus {
@@ -714,13 +735,14 @@ img {
     letter-spacing: 0.02em;
     color: #2e2f42;
     padding-top: 24px;
-    padding-bottom: 24px;
+    padding-bottom: 40px;
     position: relative;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
   .mobile-link-adres {
     color: #434455;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    margin-bottom: 24px;
   }
   .mobile-link-adres:hover,
   .mobile-link-adres:focus {
@@ -762,9 +784,12 @@ img {
     gap: 72px;
   }
   .list-item-ourportfolio {
-    padding-bottom: 48px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 48px;
   }
 }
+/* ================================================= TABLET 👇 ========================================= */
 /* tablet */
 @media (min-width: 768px) and (max-width: 1157px) {
   .head-work-rules {
@@ -799,7 +824,7 @@ img {
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url(../images/people-office.jpg);
+      url(../images/tablet/Dark-bgbackgrand-tablet.jpg);
     max-width: 1440px;
     background-repeat: no-repeat;
     background-position: center;
@@ -948,7 +973,8 @@ img {
     visibility: hidden;
   }
 }
-/* descktop */
+/* ================================================= DESKTOP 👇 ========================================= */
+/* desktop */
 @media (min-width: 1158px) {
   .mobile-menu-button {
     display: none;
