@@ -728,24 +728,23 @@ img {
     justify-content: center;
     align-items: center;
   }
-  .mobile-nav {
-    display: block;
-    margin-bottom: 168px;
-  }
+
   .navigating {
     display: flex;
     gap: 40px;
   }
   .mobile-adres {
-    display: block;
-    margin-bottom: 48px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 48px;
   }
   .navigating-mobile {
     margin-bottom: auto;
   }
   .menu-mobile {
-    display: block;
-    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
   }
   .menu {
     display: none;
