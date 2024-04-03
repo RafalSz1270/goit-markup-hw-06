@@ -112,7 +112,7 @@ ul {
   letter-spacing: 0.02em;
   color: #434455;
   text-align: center;
-  padding-bottom: 8px;
+  margin-bottom: 8px;
 }
 .head-ourportfolio {
   font-family: "Roboto", sans-serif;
@@ -229,13 +229,7 @@ img {
   width: 100%;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.footer-social-media {
-  display: block;
-  justify-content: center;
-  align-items: center;
-  gap: 16px;
-  margin-bottom: 72px;
-}
+
 .footer-list-social-media {
   display: flex;
   gap: 16px;
@@ -336,12 +330,9 @@ img {
   justify-items: center;
   align-items: center;
 }
-.footer-logo-and-p {
-  margin-bottom: 72px;
-}
+
 .footer {
   display: block;
-  row-gap: 72px;
 }
 .form-subscribe {
   display: flex;
@@ -349,7 +340,6 @@ img {
   justify-content: center;
   align-items: center;
   row-gap: 16px;
-  margin-bottom: 8px;
 }
 .personal-contact {
   display: flex;
@@ -428,7 +418,6 @@ img {
   background-color: #4d5ae5;
   border: none;
   border-radius: 4px;
-  margin-left: 24px;
 }
 .sendicon {
   fill: #fff;
@@ -618,6 +607,36 @@ img {
   padding-right: 16px;
 }
 /* ================================================= MOBILE 👇 ========================================= */
+.title-box {
+  background-color: #2e2f42;
+  padding-top: 72px;
+  padding-bottom: 72px;
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/mobile/dark-bgx1mobile.jpg);
+
+  max-width: 320px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin: 0 auto;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+@media screen and (min-device-pixel-ratio: 2),
+  screen and (min-resolution: 192dpi),
+  screen and (min-resolution: 2dppx) {
+  .title-box {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/mobile/dark-bgx2mobile.jpg);
+  }
+}
 @media (min-width: 320px) and (max-width: 767px) {
   .mobile-menu-button {
     border: none;
@@ -657,10 +676,21 @@ img {
   .section-our-portfolio {
     display: flex;
     justify-content: center;
+    padding: 96px 0;
   }
   .section-our-team {
     display: flex;
     justify-content: center;
+  }
+  .footer-logo-and-p {
+    margin-bottom: 72px;
+  }
+  .footer-social-media {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 72px;
   }
   .mobile-menu {
     position: fixed;
@@ -686,34 +716,19 @@ img {
     padding: 17px 0;
   }
   .first-head {
-    font: 700 36px / 1.2 "Roboto", sans-serif;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.2;
+    font-family: "Roboto", sans-serif;
     letter-spacing: 0.02em;
     text-align: center;
     color: #fff;
+    max-width: 216px;
   }
   .work-rules {
     display: flex;
     justify-content: center;
-  }
-  .title-box {
-    background-color: #2e2f42;
-    padding-top: 188px;
-    padding-bottom: 188px;
-    background-image: image-set
-        (
-          url(../images/mobile/dark-bgx1mobile.jpg) 1x,
-          url(../images/mobile/dark-bgx2mobile.jpg) 2x
-        ),
-      linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7));
-
-    max-width: 320px;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    margin: 0 auto;
-    position: relative;
-    display: flex;
-    justify-content: center;
+    padding: 96px 0;
   }
 
   .list-item-ourteam {
@@ -842,6 +857,34 @@ img {
 }
 /* ================================================= TABLET 👇 ========================================= */
 /* tablet */
+.title-box {
+  background-color: #2e2f42;
+  padding-top: 112px;
+  padding-bottom: 112px;
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/tablet/Dark-bgbackgrand-tablet.jpg);
+
+  max-width: 768px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin: 0 auto;
+  position: relative;
+}
+@media screen and (min-device-pixel-ratio: 2),
+  screen and (min-resolution: 192dpi),
+  screen and (min-resolution: 2dppx) {
+  .title-box {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/tablet/Dark-bgbackgrand-tablet-2x.jpg);
+  }
+}
 @media (min-width: 768px) and (max-width: 1157px) {
   .head-work-rules {
     font-weight: 700;
@@ -853,6 +896,10 @@ img {
   }
   .header-info {
     display: flex;
+  }
+  .section-our-team {
+    padding-top: 96px;
+    padding-bottom: 96px;
   }
   .paragraph-work-rules {
     font-weight: 500;
@@ -870,26 +917,7 @@ img {
     justify-content: center;
     flex-wrap: wrap;
   }
-  .title-box {
-    background-color: #2e2f42;
-    padding-top: 188px;
-    padding-bottom: 188px;
-    background-image: -webkit-image-set(
-      url(../images/tablet/Dark-bgbackgrand-tablet.jpg) 1x,
-      url(../images/tablet/Dark-bgbackgrand-tablet-2x.jpg) 2x
-    );
-    background-image: linear-gradient(
-      rgba(46, 47, 66, 0.7),
-      rgba(46, 47, 66, 0.7)
-    );
 
-    max-width: 768px;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    margin: 0 auto;
-    position: relative;
-  }
   .logo {
     font-family: "Raleway", sans-serif;
     font-weight: 700;
@@ -921,7 +949,15 @@ img {
   a {
     text-decoration: none;
   }
+  .header-styles {
+    padding: 15px 0;
+  }
   .link-adres {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.2;
+    font-family: "Roboto", sans-serif;
+    letter-spacing: 0.04em;
     color: #434455;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
@@ -948,16 +984,20 @@ img {
   .menu {
     visibility: visible;
   }
+  .work-rules {
+    padding-top: 96px;
+    padding-bottom: 96px;
+  }
   .list-item-ourteam {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    row-gap: 64px;
-    gap: 24px;
+    justify-content: center;
+    gap: 64px 24px;
   }
   .item-ourteam {
     background-color: #ffffff;
-    flex-basis: calc((100% - 24px) / 2);
+    flex-basis: 264px;
     border-top-left-radius: 0;
     border-top-right-radius: 0;
     border-bottom-left-radius: 4px;
@@ -978,6 +1018,10 @@ img {
   }
   .work-rules-item {
     flex-basis: calc((100% - 24px) / 2);
+  }
+  .section-our-portfolio {
+    padding-top: 96px;
+    padding-bottom: 96px;
   }
   .icons {
     display: none;
@@ -1000,10 +1044,10 @@ img {
   .footer {
     display: flex;
     flex-wrap: wrap;
+    gap: 72px 24px;
+    max-width: 530px;
   }
-  .footer-logo-and-p {
-    margin-right: 120px;
-  }
+
   .logo-footer {
     font-family: "Raleway", sans-serif;
     font-weight: 700;
@@ -1016,7 +1060,6 @@ img {
     margin-bottom: 16px;
   }
   .form-subscribe {
-    margin-bottom: 8px;
     gap: 24px;
     justify-content: left;
   }
