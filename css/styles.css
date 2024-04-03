@@ -713,7 +713,7 @@ img {
     min-height: 623px;
   }
   .header-styles {
-    padding: 17px 0;
+    padding: 12px 0;
   }
   .first-head {
     font-weight: 700;
@@ -857,35 +857,35 @@ img {
 }
 /* ================================================= TABLET 👇 ========================================= */
 /* tablet */
-.title-box {
-  background-color: #2e2f42;
-  padding-top: 112px;
-  padding-bottom: 112px;
-  background-image: linear-gradient(
-      rgba(46, 47, 66, 0.7),
-      rgba(46, 47, 66, 0.7)
-    ),
-    url(../images/tablet/Dark-bgbackgrand-tablet.jpg);
-
-  max-width: 768px;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  margin: 0 auto;
-  position: relative;
-}
-@media screen and (min-device-pixel-ratio: 2),
-  screen and (min-resolution: 192dpi),
-  screen and (min-resolution: 2dppx) {
+@media (min-width: 768px) and (max-width: 1157px) {
   .title-box {
+    background-color: #2e2f42;
+    padding-top: 112px;
+    padding-bottom: 112px;
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url(../images/tablet/Dark-bgbackgrand-tablet-2x.jpg);
+      url(../images/tablet/Dark-bgbackgrand-tablet.jpg);
+
+    max-width: 768px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin: 0 auto;
+    position: relative;
   }
-}
-@media (min-width: 768px) and (max-width: 1157px) {
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    .title-box {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/tablet/Dark-bgbackgrand-tablet-2x.jpg);
+    }
+  }
   .head-work-rules {
     font-weight: 700;
     font-size: 36px;
@@ -917,7 +917,9 @@ img {
     justify-content: center;
     flex-wrap: wrap;
   }
-
+  .item-contact {
+    margin-bottom: 12px;
+  }
   .logo {
     font-family: "Raleway", sans-serif;
     font-weight: 700;
@@ -938,11 +940,6 @@ img {
     gap: 40px;
   }
   .text-adres {
-    font-family: "Roboto", sans-serif;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.5em;
-    letter-spacing: 0.02em;
     font-style: normal;
     visibility: visible;
   }
@@ -950,7 +947,7 @@ img {
     text-decoration: none;
   }
   .header-styles {
-    padding: 15px 0;
+    padding: 11px 0;
   }
   .link-adres {
     font-weight: 400;
@@ -1080,15 +1077,6 @@ img {
 /* ================================================= DESKTOP 👇 ========================================= */
 /* desktop */
 @media (min-width: 1158px) {
-  .mobile-menu-button {
-    display: none;
-  }
-  .mobile-menu {
-    display: none;
-  }
-  .header-info {
-    display: flex;
-  }
   .title-box {
     background-color: #2e2f42;
     padding-top: 188px;
@@ -1105,6 +1093,27 @@ img {
     margin: 0 auto;
     position: relative;
   }
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    .title-box {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/people-officex2.jpg);
+    }
+  }
+  .mobile-menu-button {
+    display: none;
+  }
+  .mobile-menu {
+    display: none;
+  }
+  .header-info {
+    display: flex;
+  }
+
   .logo {
     font-family: "Raleway", sans-serif;
     font-weight: 700;
